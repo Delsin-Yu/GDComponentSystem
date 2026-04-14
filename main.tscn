@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dxap6dy30sqyh"]
+
+[ext_resource type="Script" uid="uid://cpy0tgmfx7bhh" path="res://addons/GDComponentSystem/ComponentHosts/Node2DComponentHost.cs" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://b23bxo4tkc2pi" path="res://addons/GDComponentSystem/ComponentBases/NodeComponent.cs" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://bnstusmjy0lpn" path="res://MainComponent.cs" id="3_1bvp3"]
+
+[sub_resource type="Resource" id="Resource_h2yge"]
+script = ExtResource("3_1bvp3")
+metadata/_custom_type_script = "uid://bnstusmjy0lpn"
+
+[node name="main" type="Node2D" unique_id=2082875186]
+script = ExtResource("1_ig7tw")
+_components = Array[ExtResource("2_h2yge")]([SubResource("Resource_h2yge")])

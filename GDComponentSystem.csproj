@@ -1,0 +1,16 @@
+<Project Sdk="Godot.NET.Sdk/4.6.1">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <EnableDynamicLoading>true</EnableDynamicLoading>
+    </PropertyGroup>
+    <ItemGroup Condition="false">
+<!--    <ItemGroup Condition="true">-->
+        <Compile Remove="addons\GDComponentSystem\ComponentBases\**\*"/>
+        <Compile Remove="addons\GDComponentSystem\ComponentHosts\**\*"/>
+        <None Include="addons\GDComponentSystem\ComponentBases\**\*"/>
+        <None Include="addons\GDComponentSystem\ComponentHosts\**\*"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="**\*.uid" DependentUpon="%(Filename)" />
+    </ItemGroup>
+</Project>
